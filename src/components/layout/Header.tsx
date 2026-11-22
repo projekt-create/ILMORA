@@ -40,8 +40,7 @@ export function Header({ onOpenSearch, onOpenBookmarks }: HeaderProps) {
   const navLinks = [
     { href: '/', label: t.nav.home },
     { href: '/huquq', label: t.nav.law },
-    { href: '/huquq/kodekslar', label: t.nav.codes },
-    { href: '/huquq/kodekslar/konstitutsiya', label: t.nav.constitution },
+    { href: '/tarix', label: 'Tarix' },
   ];
 
   return (
@@ -103,7 +102,7 @@ export function Header({ onOpenSearch, onOpenBookmarks }: HeaderProps) {
               title="Qidiruv (Ctrl + K)"
             >
               <Search className="w-3.5 h-3.5" />
-              <span className="md:hidden">{t.nav.search}</span>
+              <span className="hidden sm:inline md:hidden">{t.nav.search}</span>
               <span className="hidden md:inline">{t.search.shortPlaceholder}</span>
               <kbd className="hidden lg:inline-block px-1.5 py-0.5 text-[10px] font-mono bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-600 rounded-sm text-slate-500 dark:text-slate-400">
                 ⌘K

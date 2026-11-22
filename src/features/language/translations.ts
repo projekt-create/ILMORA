@@ -127,6 +127,60 @@ export interface TranslationSchema {
     tests: string;
     comingSoon: string;
   };
+  history: {
+    badge: string;
+    heroTitle: string;
+    heroHighlight: string;
+    heroSubtitle: string;
+    searchPlaceholder: string;
+    verifiedSources: string;
+    studentFriendly: string;
+    searchResults: string;
+    topicsCount: string;
+    noResults: string;
+    noResultsDesc: string;
+    recentSearches: string;
+    clearRecent: string;
+    sections: {
+      uzbekistan: string;
+      uzbekistanDesc: string;
+      world: string;
+      worldDesc: string;
+      people: string;
+      peopleDesc: string;
+      dates: string;
+      datesDesc: string;
+      maps: string;
+      mapsDesc: string;
+      glossary: string;
+      glossaryDesc: string;
+      certificate: string;
+      certificateDesc: string;
+    };
+    featuredTopic: string;
+    startTopic: string;
+    yourProgress: string;
+    progressDesc: string;
+    continueAction: string;
+    systematicStudy: string;
+    popularTopics: string;
+    viewAll: string;
+    chronology: string;
+    importantDates: string;
+    timeline: string;
+    knowledgeQuiz: string;
+    quizDesc: string;
+    seeResult: string;
+    retakeQuiz: string;
+    resultLabel: string;
+    comparison: string;
+    comparisonDesc: string;
+    source: string;
+    markAsRead: string;
+    readMarked: string;
+    recentReadTopics: string;
+    noRecentRead: string;
+  };
   footer: {
     description: string;
     lexAttribution: string;
@@ -267,6 +321,60 @@ export const translations: Record<'uz' | 'ru', TranslationSchema> = {
       tests: 'Milliy sertifikat testlari',
       comingSoon: 'Tez orada ochiladi',
     },
+    history: {
+      badge: 'ILMORA · TARIX',
+      heroTitle: 'Tarixni yodlamang.',
+      heroHighlight: 'Uni anglang.',
+      heroSubtitle: 'O‘zbekiston va jahon tarixini voqealar, shaxslar va sabab-oqibatlar orqali tizimli o‘rganing.',
+      searchPlaceholder: 'Amir Temur, 1370, Jadidchilik, Baqtriya...',
+      verifiedSources: 'Tekshirilgan manbalar',
+      studentFriendly: 'O‘quvchi uchun sodda va tushunarli',
+      searchResults: 'Qidiruv natijalari',
+      topicsCount: 'ta natija topildi',
+      noResults: 'Natija topilmadi',
+      noResultsDesc: 'Boshqa kalit so‘z bilan qidirib ko‘ring yoki takliflardan foydalaning.',
+      recentSearches: 'So‘nggi qidiruvlar',
+      clearRecent: 'Tarixni tozalash',
+      sections: {
+        uzbekistan: 'O‘zbekiston tarixi',
+        uzbekistanDesc: 'Qadimgi davr, davlatlar, xonliklar va mustaqillik tarixi.',
+        world: 'Jahon tarixi',
+        worldDesc: 'Sivilizatsiyalar va dunyo miqyosidagi tarixiy jarayonlar.',
+        people: 'Tarixiy shaxslar',
+        peopleDesc: 'Sarkardalar, olimlar va ma’rifatparvarlar kutubxonasi.',
+        dates: 'Sanalar va xronologiya',
+        datesDesc: 'Eng muhim voqealarni vaqt chizig‘ida ko‘ring.',
+        maps: 'Tarixiy xaritalar',
+        mapsDesc: 'Hududlar va davlatlar o‘zgarishini xaritada kuzating.',
+        glossary: 'Atamalar lug‘ati',
+        glossaryDesc: 'Tarixiy tushunchalarning sodda va aniq izohi.',
+        certificate: 'Milliy sertifikat',
+        certificateDesc: 'Tarix fanidan milliy sertifikatga tayyorgarlik tizimi.',
+      },
+      featuredTopic: 'Kun mavzusi',
+      startTopic: 'Mavzuni boshlash',
+      yourProgress: 'Sizning progress',
+      progressDesc: 'Mavzularni o‘qib borishingiz bilan progress avtomatik hisoblanadi.',
+      continueAction: 'Davom ettirish',
+      systematicStudy: 'Tizimli o‘rganish',
+      popularTopics: 'Asosiy o‘quv mavzulari',
+      viewAll: 'Barchasi',
+      chronology: 'Xronologiya',
+      importantDates: 'Muhim sanalar',
+      timeline: 'Timeline',
+      knowledgeQuiz: 'Qisqa bilim sinovi',
+      quizDesc: 'Mustaqil tuzilgan amaliy test savollari',
+      seeResult: 'Natijani ko‘rish',
+      retakeQuiz: 'Qayta ishlash',
+      resultLabel: 'Natija',
+      comparison: 'Tarixiy taqqoslash',
+      comparisonDesc: 'Jadvalda asosiy farq va umumiy jihatlarni solishtiring.',
+      source: 'Manba',
+      markAsRead: 'Mavzuni o‘qildim deb belgilash',
+      readMarked: 'Mavzu o‘qildi',
+      recentReadTopics: 'So‘nggi o‘qilgan mavzular',
+      noRecentRead: 'Hozircha o‘qilgan mavzular yo‘q.',
+    },
     footer: {
       description: 'ILMORA — O‘zbekiston Respublikasi yoshlari, talabalar va huquqshunoslar uchun milliy huquqiy ta\'lim va bilimlar portali.',
       lexAttribution: 'Hujjatlar matnlari O‘zbekiston Respublikasi Adliya vazirligining "Lex.uz" yagona elektron axborot tizimi materiallariga asoslangan.',
@@ -404,6 +512,60 @@ export const translations: Record<'uz' | 'ru', TranslationSchema> = {
       english: 'Английский язык',
       tests: 'Тесты национального сертификата',
       comingSoon: 'Скоро будет доступно',
+    },
+    history: {
+      badge: 'ILMORA · ИСТОРИЯ',
+      heroTitle: 'Не зазубривайте историю.',
+      heroHighlight: 'Поймите её.',
+      heroSubtitle: 'Изучайте историю Узбекистана и мира системно через события, личности и причинно-следственные связи.',
+      searchPlaceholder: 'Амир Темур, 1370, Джадидизм, Бактрия...',
+      verifiedSources: 'Проверенные источники',
+      studentFriendly: 'Просто и понятно для учащихся',
+      searchResults: 'Результаты поиска',
+      topicsCount: 'результатов найдено',
+      noResults: 'Ничего не найдено',
+      noResultsDesc: 'Попробуйте изменить поисковый запрос или воспользуйтесь подсказками.',
+      recentSearches: 'Недавние поиски',
+      clearRecent: 'Очистить историю',
+      sections: {
+        uzbekistan: 'История Узбекистана',
+        uzbekistanDesc: 'Древнейший период, государства, ханства и эпоха независимости.',
+        world: 'Всемирная история',
+        worldDesc: 'Цивилизации и исторические процессы мирового масштаба.',
+        people: 'Исторические личности',
+        peopleDesc: 'Библиотека полководцев, ученых и просветителей.',
+        dates: 'Даты и хронология',
+        datesDesc: 'Ключевые события на временной шкале.',
+        maps: 'Исторические карты',
+        mapsDesc: 'Интерактивные исторические карты и регионы.',
+        glossary: 'Словарь терминов',
+        glossaryDesc: 'Простые и точные толкования исторических понятий.',
+        certificate: 'Национальный сертификат',
+        certificateDesc: 'Подготовка к национальному сертификату по истории.',
+      },
+      featuredTopic: 'Тема дня',
+      startTopic: 'Начать тему',
+      yourProgress: 'Ваш прогресс',
+      progressDesc: 'Прогресс рассчитывается автоматически по мере изучения тем.',
+      continueAction: 'Продолжить',
+      systematicStudy: 'Системное изучение',
+      popularTopics: 'Основные темы программы',
+      viewAll: 'Все темы',
+      chronology: 'Хронология',
+      importantDates: 'Важные даты',
+      timeline: 'Таймлайн',
+      knowledgeQuiz: 'Проверка знаний',
+      quizDesc: 'Авторские практические тестовые задания',
+      seeResult: 'Посмотреть результат',
+      retakeQuiz: 'Пройти заново',
+      resultLabel: 'Результат',
+      comparison: 'Историческое сравнение',
+      comparisonDesc: 'Сравнительные таблицы различий и общих черт.',
+      source: 'Источник',
+      markAsRead: 'Отметить тему как прочитанную',
+      readMarked: 'Тема изучена',
+      recentReadTopics: 'Недавно изученные темы',
+      noRecentRead: 'Пока нет изученных тем.',
     },
     footer: {
       description: 'ILMORA — национальный правовой образовательный портал для молодежи, студентов и юристов Узбекистана.',
